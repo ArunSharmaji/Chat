@@ -30,7 +30,7 @@ function getResponse() {
     let userText = $("#textInput").val();
 
     if (userText == "") {
-        userText = "I love Code Palace!";
+        userText = "Checking for message";
     }
     let time = getTime();
     let userHtml = '<p class="userText"><span>'+userText+'</span></p>';
