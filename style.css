@@ -1,0 +1,90 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background:linear-gradient(rgba(139, 42, 42, 0.5),rgba(139, 42, 42, 0.5));
+}
+#box{
+    height: 500px;
+}
+.text{
+   bottom: 0%; 
+   height: 60px;
+   width: 100%;
+   background-color:rgb(0, 0, 0);
+   background-position: center;
+   background-size: cover;
+   position: absolute;
+   border-top-left-radius: 45%;
+   border-top-right-radius: 45%;
+   position:fixed;
+}
+input{
+    margin-top: 18px;
+    margin-left: 6%;
+    background-color: azure;
+    border-radius: 20%;
+    border: none;
+    outline: 0px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    position:fixed;
+}
+#s1{
+    margin-left: 85%;
+    background-color: darkgreen;
+    position:fixed;
+}
+#s1:hover{
+    color: aqua;
+}
+.chat span{
+    line-height: 1.5em;
+    display: inline-block;
+    background: #d89bd0;
+    padding: 10px;
+    border-radius: 50%;
+    border-bottom-left-radius: 0px;
+    max-width: 80%;
+    margin-left: 10px;
+    animation: floatup .5s forwards
+}
+
+.userText {
+    color: white;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: right;
+    clear: both;
+    
+}
+
+.userText span {
+    line-height: 1.5em;
+    display: inline-block;
+    background: #5ca6fa5e;
+    padding: 10px;
+    border-radius: 50%;
+    border-bottom-right-radius: 0px;
+    max-width: 80%;
+    margin-right: 10px;
+    flex-direction: column-reverse;
+
+    
+}
+.chat {
+    
+    height: 500px;
+    overflow: auto;
+    scrollbar-width: none;
+    height: max-content;
+    transition: ease-out;
+}
+
+@media screen and (max-width: 400px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
